@@ -7,14 +7,28 @@
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
     <body>
-        <div class="profile">
+
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" id="btn-menu" onclick="OpenSlideMenu()"><i class="fas fa-bars"></i></a>
+            </span>
+
+            <div id="side-menu" class="side-menu">
+                <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Portfolio</a>
+            </div>
+        </nav>
+
+        <div class="profile" id="profile">
 
             <img class="prof-pic" src="images/ProfilePic.jpg">
 
             <h1>Macaulay-Reiss Christian</h1>
             <h5>Final Year Student at Cardiff University | Software Engineer</h5>
 
-<div class="line-break"></div>
+            <div class="line-break"></div>
 
             <p>My passion is developing and enhancing my skills</p>
 
@@ -25,5 +39,16 @@
             </div>
             
         </div>
+
+        <script>
+            function OpenSlideMenu() {
+                document.getElementById('side-menu').style.width = '200px';
+            }
+
+            function CloseSlideMenu() {
+                document.getElementById('side-menu').style.width = '0';
+            }
+        </script>
+
     </body>
 </html>

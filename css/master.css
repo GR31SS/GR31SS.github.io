@@ -7,12 +7,61 @@ html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.navbar {
+    padding: 10px;
+    font-size: 30px;
+    overflow: hidden;
+    height: 63px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-menu a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #ccc;
+}
+
+.side-menu .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
 .profile {
     width: 400px;
     height: 425px;
     padding: 40px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
     background: rgba(0, 0, 0, 0.4);
     color: white;
     text-align: center;
