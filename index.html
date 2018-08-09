@@ -10,7 +10,7 @@
 
         <nav class="navbar">
             <span class="open-slide">
-                <a href="#" id="btn-menu" onclick="OpenSlideMenu()"><i class="fas fa-bars"></i></a>
+                <a href="#" id="btn-menu" onclick="OpenSlideMenu()"><i id="menu" class="fas fa-bars"></i></a>
             </span>
 
             <div id="side-menu" class="side-menu">
@@ -43,10 +43,12 @@
         <script>
             function OpenSlideMenu() {
                 document.getElementById('side-menu').style.width = '200px';
+                document.getElementById("menu").style.display = 'none';
             }
 
             function CloseSlideMenu() {
                 document.getElementById('side-menu').style.width = '0';
+                document.getElementById("menu").style.display = 'block';
             }
         </script>
 
