@@ -7,39 +7,83 @@
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
     <body>
-
-        <nav class="navbar">
-            <span class="open-slide">
-                <a href="#" id="btn-menu" onclick="OpenSlideMenu()"><i id="menu" class="fas fa-bars"></i></a>
-            </span>
-
-            <div id="side-menu" class="side-menu">
-                <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
-                <a href="#">Home</a>
-                <a href="#">About Me</a>
-                <a href="#">Portfolio</a>
+        <div class="pimg1">
+            <div class="ptext1">
+                <span class="border">
+                        <nav class="navbar">
+                            <span class="open-slide">
+                                <a href="#" id="btn-menu" onclick="OpenSlideMenu()"><i id="menu" class="fas fa-bars"></i></a>
+                            </span>
+                
+                            <div id="side-menu" class="side-menu">
+                                <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+                                <a href="#">Home</a>
+                                <a href="#">About Me</a>
+                                <a href="#">Portfolio</a>
+                            </div>
+                        </nav>
+                    
+                        <div class="profile" id="profile">
+                
+                            <img class="prof-pic" src="images/ProfilePic.jpg">
+                
+                            <h1>Macaulay-Reiss Christian</h1>
+                            <h5>Final Year Student at Cardiff University | Software Engineer</h5>
+                
+                            <div class="line-break"></div>
+                
+                            <p>My passion is developing and enhancing my skills</p>
+                
+                            <div class="social">
+                                <a href="https://github.com/GR31SS" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/macaulay-reisschristian/ " target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com/macaulay_reiss/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            
+                        </div>
+                </span>
             </div>
-        </nav>
+        </div>
+        
+        <section class="section section-dark">
+            <h2>Section one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque beatae libero modi totam sapiente nemo explicabo magni nesciunt ipsa, aperiam ullam voluptatum eveniet animi fuga ratione, sunt cum eos. Amet!</p>
+        </section>
 
-        <div class="profile" id="profile">
-
-            <img class="prof-pic" src="images/ProfilePic.jpg">
-
-            <h1>Macaulay-Reiss Christian</h1>
-            <h5>Final Year Student at Cardiff University | Software Engineer</h5>
-
-            <div class="line-break"></div>
-
-            <p>My passion is developing and enhancing my skills</p>
-
-            <div class="social">
-                <a href="https://github.com/GR31SS" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/macaulay-reisschristian/ " target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/macaulay_reiss/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="pimg2">
+            <div class="ptext">
+                <span class="border">
+                    Paralax Site
+                </span>
             </div>
-            
         </div>
 
+        <section class="section section-dark">
+                <h2>Section two</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque beatae libero modi totam sapiente nemo explicabo magni nesciunt ipsa, aperiam ullam voluptatum eveniet animi fuga ratione, sunt cum eos. Amet!</p>
+        </section>
+
+        <div class="pimg3">
+                <div class="ptext">
+                    <span class="border">
+                        Paralax Site
+                    </span>
+                </div>
+        </div>    
+
+        <section class="section section-dark">
+                <h2>Section three</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque beatae libero modi totam sapiente nemo explicabo magni nesciunt ipsa, aperiam ullam voluptatum eveniet animi fuga ratione, sunt cum eos. Amet!</p>
+        </section>
+
+        <div class="pimg1">
+                <div class="ptext">
+                    <span class="border trans">
+                        Paralax Site
+                    </span>
+                </div>
+        </div>
+    
         <script>
             function OpenSlideMenu() {
                 document.getElementById('side-menu').style.width = '200px';
