@@ -152,10 +152,6 @@ p {
     padding: 20px;
 }
 
-.ptext .border.trans {
-    background-color: transparent;
-}
-
 @media(max-width:568px) {
     .pimg1, .pimg2, .pimg3 {
         background-attachment: scroll;
