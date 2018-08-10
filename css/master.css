@@ -24,6 +24,10 @@ body, html {
     color: white;
 }
 
+.fas fa-bars {
+    position: fixed;
+}
+
 .side-menu {
     height: 100%;
     width: 0;
