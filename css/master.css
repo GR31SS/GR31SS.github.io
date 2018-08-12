@@ -18,6 +18,8 @@ body {
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
+    opacity: 0.7;
+
 }
 
 .pages > div:nth-child(2) {
@@ -28,20 +30,14 @@ body {
 
 .pages > div:nth-child(3) {
     background: #01a2a6;
-    background-size: cover;
-    background-attachment: fixed;
-}
+}    
 
 .pages > div:nth-child(4) {
     background: #232323;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .pages > div:nth-child(5) {
     background: #F2D00E;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .menu {
@@ -89,7 +85,6 @@ h2 {
     color: white;
     padding: 40px;
     font-weight: 200;
-    opacity: 0.3;
 }
 
 .container {
