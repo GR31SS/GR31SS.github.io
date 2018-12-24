@@ -14,7 +14,7 @@ body {
     height: 100%;
 }
 
-.pages > div:nth-child(1) {
+.pages > .start-module {
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -22,21 +22,21 @@ body {
 
 }
 
-.pages > div:nth-child(2) {
+.pages > .about-module {
     background-image: url(../images/about-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
-.pages > div:nth-child(3) {
+.pages > .skills-module {
     background: #01a2a6;
 }    
 
-.pages > div:nth-child(4) {
+.pages > .work-module {
     background: #232323;
 }
 
-.pages > div:nth-child(5) {
+.pages > .contact-module {
     background: #F2D00E;
 }
 
