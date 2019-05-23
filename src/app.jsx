@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import styles from './styles/main.scss'
 
-const content = 'Hello world!'
+const content = 'COMING SOON!'
 
 const App = () => (
   <Fragment>
