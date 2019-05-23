@@ -6,6 +6,8 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack -p --mode production",
     "start": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d /dist",
     "format": "prettier \"src/**/*.jsx\" \"src/**/*.js\" \"test/**/*.js\"  --write",
     "test": "tape test/*.js"
   },
@@ -24,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/GR31SS/GR31SS.github.io/issues"
   },
-  "homepage": "https://github.com/GR31SS/GR31SS.github.io#readme",
+  "homepage": "https://github.com/GR31SS/GR31SS.github.io",
   "keywords": [],
   "devDependencies": {
     "@babel/core": "7.2.2",
@@ -45,11 +47,13 @@
     "node-sass": "^4.9.1",
     "prettier": "^1.17.1",
     "sass-loader": "^7.0.3",
+    "tape": "^4.10.1",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
   },
