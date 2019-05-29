@@ -1,21 +1,21 @@
 {
-  "name": "Portfolio",
+  "name": "gr31ss.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/GR31SS/Portfolio#readme",
+  "homepage": "https://github.com/GR31SS/GR31SS.github.io",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GR31SS/Portfolio.git"
+    "url": "git+https://github.com/GR31SS/GR31SS.github.io.git"
   },
   "author": "Macaulay-Reiss Christian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GR31SS/Portfolio/issues"
+    "url": "https://github.com/GR31SS/GR31SS.github.io/issues"
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
