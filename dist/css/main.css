@@ -123,6 +123,10 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem; }
+    h1.lg-heading.name,
+    h2.lg-heading.name,
+    h3.lg-heading.name {
+      font-size: 3.5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
