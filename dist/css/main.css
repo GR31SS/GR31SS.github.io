@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -175,6 +176,41 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+  .about-info .skills {
+    width: 500px;
+    margin: 60px auto;
+    color: white; }
+  .about-info .skills li {
+    margin: 20px 0;
+    list-style: none; }
+  .about-info .bar {
+    background: #005bbb;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3; }
+  .about-info .bar span {
+    height: 2px;
+    float: left;
+    background: #2187e7b3; }
+  .about-info .html {
+    width: 80%;
+    animation: 2s;
+    animation-name: การเคลื่อนไหวที่-1; }
+
+@keyframes การเคลื่อนไหวที่-1 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 80%; } }
+  .about-info .css {
+    width: 80%;
+    animation: html 2s; }
+  .about-info .javascript {
+    width: 80%;
+    animation: html 2s; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {

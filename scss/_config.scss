@@ -29,6 +29,18 @@ $background-opacity: 0.9;
   }
 }
 
+@mixin animation-keyframes {
+  $animation-number: 0 !default !global;
+  $animation-number: $animation-number + 1 !global;
+  $name: unquote('การเคลื่อนไหวที่-#{$animation-number}');
+  animation-name: $name;
+  @at-root {
+    @keyframes #{$name} {
+      @content;
+    }
+  }
+}
+
 // Set Text Color
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
