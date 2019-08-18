@@ -83,7 +83,9 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     'bioimage bio bio'
+    'skill-title skill-title skill-title'
     'skills skills skills'
+    'experience-title experience-title experience-title'
     'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 
@@ -98,20 +100,9 @@ main {
     font-size: 1.5rem;
   }
 
-  .job-1 {
-    grid-area: job1;
-  }
-  .job-2 {
-    grid-area: job2;
-  }
-  .job-3 {
-    grid-area: job3;
-  }
-
-  .job {
-    background: lighten($primary-color, $amount: 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+  .skill-title {
+    justify-items: start;
+    grid-area: skill-title;
   }
 
   .skills {
@@ -120,7 +111,6 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-    padding: 7rem;
   }
 
   .skill {
@@ -140,6 +130,28 @@ main {
     margin: auto;
     padding: 0.6rem;
     text-align: center;
+  }
+
+  .experience-title {
+    justify-items: start;
+    grid-area: experience-title;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+  .job-2 {
+    grid-area: job2;
+  }
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    justify-items: center;
+    background: lighten($primary-color, $amount: 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
   }
 }
 

@@ -173,7 +173,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'skills skills skills' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'skill-title skill-title skill-title' 'skills skills skills' 'experience-title experience-title experience-title' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -183,23 +183,15 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #005bbb 5px solid; }
+  .about-info .skill-title {
+    justify-items: start;
+    grid-area: skill-title; }
   .about-info .skills {
     grid-area: skills;
     justify-items: center;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 7rem; }
+    grid-template-columns: repeat(4, 1fr); }
   .about-info .skill {
     display: grid;
     grid-template-columns: 1fr;
@@ -213,6 +205,20 @@ main {
     margin: auto;
     padding: 0.6rem;
     text-align: center; }
+  .about-info .experience-title {
+    justify-items: start;
+    grid-area: experience-title; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    justify-items: center;
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #005bbb 5px solid; }
 
 .projects {
   display: grid;
