@@ -83,7 +83,8 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     'bioimage bio bio'
-    'job1 job2 job3';
+    'job1 job2 job3'
+    'skills skills skills';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -111,6 +112,29 @@ main {
     background: lighten($primary-color, $amount: 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+
+  .skills {
+    grid-area: skills;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: lighten($primary-color, $amount: 5);
+    padding: 4rem 3rem;
+  }
+
+  .skill {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .skill-image {
+    margin: auto;
+  }
+
+  .skill-text {
+    margin: auto;
+    padding: 1rem 0.6rem;
+    text-align: center;
   }
 }
 
